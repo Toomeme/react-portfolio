@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import './Nav.css';
 
 function Nav(props) {
   const {
@@ -14,20 +13,6 @@ function Nav(props) {
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
-// Sticky Menu Area
-  useEffect(() => {
-    window.addEventListener('scroll', isSticky);
-      return () => {
-          window.removeEventListener('scroll', isSticky);
-      };
-  });
-
-  /* Method that will fix header after a specific scrollable */
-  const isSticky = (e) => {
-    const header = document.querySelector('.header-section');
-    const scrollTop = window.scrollY;
-    scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
-};
     
 
   return (
@@ -39,17 +24,18 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
+          <li className="mx-2 Nav btn">
             <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
               About me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className={`mx-2 Nav btn ${contactSelected && 'navActive'}`}>
+            <span onClick={() => {setContactSelected(true)
+            document.title = capitalizeFirstLetter('contact Me');}}>Contact</span>
           </li>
           {categories.map((category) => (
             <li
-              className={`mx-1 ${
+              className={`mx-1 Nav btn ${
                 currentCategory.name === category.name && !contactSelected && 'navActive'
                 }`}
               key={category.name}
@@ -58,6 +44,7 @@ function Nav(props) {
                 onClick={() => {
                   setCurrentCategory(category);
                   setContactSelected(false);
+                  document.title = capitalizeFirstLetter(currentCategory.name);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
