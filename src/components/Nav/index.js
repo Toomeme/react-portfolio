@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import './Nav.css';
 
 function Nav(props) {
   const {
@@ -13,9 +14,24 @@ function Nav(props) {
   useEffect(() => {
     document.title = capitalizeFirstLetter(currentCategory.name);
   }, [currentCategory]);
+// Sticky Menu Area
+  useEffect(() => {
+    window.addEventListener('scroll', isSticky);
+      return () => {
+          window.removeEventListener('scroll', isSticky);
+      };
+  });
+
+  /* Method that will fix header after a specific scrollable */
+  const isSticky = (e) => {
+    const header = document.querySelector('.header-section');
+    const scrollTop = window.scrollY;
+    scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+};
+    
 
   return (
-    <header className="flex-row px-1">
+    <header className="header-section flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
           <span role="img" aria-label="camera"> 📸</span> Oh Snap!

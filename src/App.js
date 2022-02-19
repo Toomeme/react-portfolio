@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Deck from './components/Deck';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+
+
 
 function App() {
   const [categories] = useState([
@@ -19,6 +22,7 @@ function App() {
 
   const [contactSelected, setContactSelected] = useState(false);
 
+
   return (
     <div>
       <Nav
@@ -28,14 +32,23 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
+      <div className="container">
+      <Deck />
+    </div>
       <main>
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
+            
             <About></About>
+            <Gallery currentCategory={currentCategory}></Gallery>
+            
           </>
         ) : (
+          <>
+
+          <About></About>
           <ContactForm></ContactForm>
+          </>
         )}
       </main>
     </div>
