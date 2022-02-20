@@ -8,6 +8,7 @@ import ContactForm from './components/Contact';
 
 
 function App() {
+
   const [categories] = useState([
     {
       name: 'portfolio',
@@ -32,22 +33,20 @@ function App() {
       <div className="container">
       <Deck />
     </div>
-      <main>
+    <main className='about'>
+      <About/>
+    </main>
+      <section className='bottom-section'>
         {!contactSelected ? (
           <>
-            
-            <About></About>
             <Gallery currentCategory={currentCategory}></Gallery>
-            
           </>
         ) : (
           <>
-
-          <About></About>
           <ContactForm></ContactForm>
           </>
         )}
-      </main>
+      </section>
     </div>
   );
 }
