@@ -95,7 +95,21 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
+  border-bottom: 3px solid var(--tertiary);
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.bottom-border{
+  border-bottom: 2px solid var(--tertiary);
+  width: 20%;
+  position: relative;
+  margin-left: 82vh;
+  margin-bottom: 10px;
+
 }
 
 h2 {
@@ -477,4 +491,23 @@ a {
   top: 0;
   width: 70%;
   z-index: 1000;
+}
+
+.contact-container{
+  width: 100vw;
+  background-color: var(--secondary);
+  border-top: 5px solid var(--light);
+}
+
+.contact-container h1{
+  color: var(--light);
+  margin-bottom: 5px;
+}
+.contact-section{
+margin-left: 30vw;
+color: var(--light);
+}
+
+.center{
+  text-align: center;
 }

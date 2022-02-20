@@ -38,9 +38,10 @@ function ContactForm() {
   };
 
   return (
+    <div className= "contact-container">
     <section>
       <h1 data-testid="h1tag" ref={myRef}>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" className= "contact-section" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
@@ -61,6 +62,7 @@ function ContactForm() {
         <button data-testid="button" type="submit">Submit</button>
       </form>
     </section>
+    </div>
   );
 }
 

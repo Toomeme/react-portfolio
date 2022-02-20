@@ -1,16 +1,18 @@
 import React from 'react';
 
-const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, index } = currentPhoto;
+function Modal({ onClose, currentPhoto }) {
+  const {name, category, description, index} = currentPhoto;
 
   return (
-    <div className="modalBackdrop">
+   <div className="modalBackdrop">
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
         <img
-          src={require(`../../assets/large/${category}/${index}.jpg`).default}
-          alt="current category"
-        />
+            src={require(`../../assets/large/${category}/${index}.png`)}
+            alt={name}
+            className="img-thumbnail mx-1"
+            key={name}
+          />
         <p>{description}</p>
         <button type="button" onClick={onClose}>
           Close
@@ -18,6 +20,6 @@ const Modal = ({ onClose, currentPhoto }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Modal;
