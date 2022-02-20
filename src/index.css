@@ -340,15 +340,26 @@ textarea {
   transition: .3s ease-in-out; 
 }
 
-.img-thumbnail:hover {
+.sm-link{
+  top: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  }
+
+.sm-link img{
+  width:42px;
+  height:42px;
+  }
+
+.img-thumbnail:hover, 
+.sm-link a:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   }
-
-
-
 
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
@@ -532,4 +543,37 @@ color: var(--light);
 
 .center{
   text-align: center;
+}
+
+footer{
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--darker);
+  border-top: 2px solid var(--light);
+}
+
+footer p{
+  margin-top: 10px;
+  color: var(--light);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 50px;
+  box-sizing: border-box;
+  height: 5vw;
+  width: 5vw;
+  border-style: solid;
+  border-color: var(--gray);
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.arrow:hover {
+  border-bottom-width: 4px;
+  border-right-width: 4px;
 }

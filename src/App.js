@@ -4,6 +4,7 @@ import About from './components/About';
 import Deck from './components/Deck';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
 
 
 
@@ -32,6 +33,10 @@ function App() {
       ></Nav>
       <div className="container">
       <Deck />
+      <div className="arrow" onClick={() => 
+        {window.scrollTo({top: document.querySelector('.about').offsetTop, behavior: 'smooth' });}}>
+          
+        </div>
     </div>
     <main className='about'>
       <About/>
@@ -47,6 +52,7 @@ function App() {
           </>
         )}
       </section>
+      <Footer/>
     </div>
   );
 }

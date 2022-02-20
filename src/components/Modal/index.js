@@ -9,7 +9,7 @@ function Modal({ onClose, currentPhoto }) {
         <h3 className="modalTitle">{name} </h3>
         <a href={url} target="_blank" rel="noopener noreferrer">
         <img
-            src={require(`../../assets/large/${category}/${index}.png`)}
+            src={require(`../../assets/small/${category}/${index}.png`)}
             alt={name}
             className="img-thumbnail mx-1"
             key={name}

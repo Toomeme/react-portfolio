@@ -15,7 +15,7 @@ const PhotoList = ({ category }) => {
     {
       name: 'mARTy',
       category: 'portfolio',
-      description: 'An apllication that uses keywords generated from user submitted images (Via Imagga) to query the Metropolitan API.',
+      description: 'An application that uses keywords generated from user submitted images (Via Imagga) to query the Metropolitan API.',
       url:"https://dawnleblanc11.github.io/mArty/",
     },
     {

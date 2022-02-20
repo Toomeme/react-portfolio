@@ -7,13 +7,9 @@ function About() {
       <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
       <div className="my-2">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum turpis sed ex
-          condimentum molestie. Mauris condimentum lectus ut ornare dignissim. Mauris faucibus urna
-          mi, ac feugiat metus aliquam maximus. Proin aliquam justo nec diam vulputate vestibulum.
-          Aenean sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique
-          justo vel turpis sollicitudin, et tristique velit convallis. In hac habitasse platea
-          dictumst. Phasellus mattis nunc sed orci consequat laoreet. Praesent id nisl nibh.
-          Curabitur imperdiet ultricies mollis. In hac habitasse platea dictumst.
+          Hey, I'm Jacob, but you can call me Toomey! I aim to bring a splash of style to your business with simple designs that pop. 
+          Primarily a front-end developer (and hobbyist HTML5 game developer), but I'm versatile and love to learn. You can keep up with all my endeavors using the social media links to your left.
+          Reach out anytime, I look forward to hearing from you!
         </p>
       </div>
     </section>
