@@ -24,7 +24,7 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2 nav btn">
-          <span onClick={() => {setContactSelected(true)
+          <span onClick={() => {
             document.title = capitalizeFirstLetter('about');
             window.scrollTo({top: document.querySelector('.about').offsetTop, behavior: 'smooth' });
             }}>About Me</span>

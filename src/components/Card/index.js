@@ -21,7 +21,7 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
         <div className="card">
           <div>
         {pics.map((pic, index) => (
-              <img src={pic} key={index} alt="profile_picture" />
+              <img src={pic} key={index} draggable="false" alt="profile_picture" />
             ))}
             <h3>{name}</h3>
             </div>
