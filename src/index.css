@@ -67,6 +67,11 @@ a:active {
   text-decoration: none;
 }
 
+html
+{
+  overflow-x: hidden;
+}
+
 body {
   width: 100vw;
   margin: 0;
@@ -419,11 +424,6 @@ a {
   display: flex;
   align-items: center;
 }
-
-.nav{
-  color: var(--light);
-}
-
 .nav-right{
 
   margin-left: auto;
@@ -499,9 +499,6 @@ a {
 
 }
 
-
-
-
 .btn:after,
 .btn:before {
   backface-visibility: hidden;
@@ -543,9 +540,6 @@ a {
   margin-bottom: 5px;
 }
 
-.contact-container p{
-  color: var(--light);
-}
 .contact-section{
 margin-left: 30vw;
 color: var(--light);
@@ -612,6 +606,10 @@ footer p{
   border-right-width: 4px;
 }
 
+.contact-container p,
+.nav{
+  color: var(--light);
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -626,6 +624,17 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 1rem;
   }
+
+  h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--tertiary);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+
     
 }
