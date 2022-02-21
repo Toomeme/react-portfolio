@@ -68,6 +68,7 @@ a:active {
 }
 
 body {
+  width: 100vw;
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -457,6 +458,7 @@ a {
   z-index: 0;
   border-bottom: 10px solid var(--secondary);
 }
+
 .deck {
   position: absolute;
   width: 300px;
@@ -484,13 +486,29 @@ a {
   z-index: 0;
 }
 
+.card {
+  height: 600px !important;
+  width: 100px;
+  margin-left: 15%;
+  margin-top: 15%;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
 .card > div {
   height: 380px !important;
 }
 
-.card {
-  height: 500px !important;
+.card > h3 {
+  display: inline-block;
+  text-align: center;
+
 }
+
+
+
 
 .btn:after,
 .btn:before {
@@ -543,6 +561,29 @@ color: var(--light);
 
 .center{
   text-align: center;
+}
+
+.left{
+  display: block;
+  float: left;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.right{
+  display: block;
+  float: right;
+}
+.text-right{
+  text-align: right;
+}
+
+.abt-image{
+  top: 0;
+  width: 40vw;
+  height: 40vh;
 }
 
 footer{

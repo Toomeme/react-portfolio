@@ -32,7 +32,8 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <div className="container">
-      <Deck />
+       <h1>Made with</h1><h1>Results</h1><h1>In mind</h1>
+        <Deck />
       <div className="arrow" onClick={() => 
         {window.scrollTo({top: document.querySelector('.about').offsetTop, behavior: 'smooth' });}}>
           

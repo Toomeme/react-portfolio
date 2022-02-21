@@ -1,15 +1,39 @@
 import React, { useState } from 'react'
 import { useSprings} from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
+import Image1 from '../../assets/cover/css3.svg';
+import Image2 from '../../assets/cover/js.svg';
+import Image3 from '../../assets/cover/mongodb.svg';
+import Image4 from '../../assets/cover/nodejs.svg';
+import Image5 from '../../assets/cover/react.svg';
+import Image6 from '../../assets/cover/sql.svg';
 import Card from "./../Card";
 
-const data = [
-  'https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg',
-  'https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg',
+const data =  [
+  {
+  pics: [Image1],
+  name: 'CSS',
+  },
+  {
+  pics: [Image2],
+  name: 'JS',
+  },
+  {
+  pics: [Image3],
+  name: 'Mongo',
+  },
+  {
+  pics: [Image4],
+  name: 'NodeJS',
+  },
+  {
+  pics: [Image5],
+  name: 'React',
+  },
+  {
+  pics: [Image6],
+  name: 'SQL',
+  }
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -64,7 +88,9 @@ function Deck() {
       rot={rot}
       scale={scale}
       trans={trans}
+      data={data}
       bind={bind}
+      key={i}
     />
   ));
 }
