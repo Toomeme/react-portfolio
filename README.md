@@ -1,4 +1,4 @@
-# Budget Tracker
+# React Portfolio
   ![badge](https://img.shields.io/badge/license-WTFPL-brightgreen)<br />
 ## Description
 A personal portfolio that shows the work I've done until now, and a functional React-JS app to adhere to modern design principles
@@ -43,5 +43,3 @@ Email: jtoom238@gmail.com<br /><br />
 
 ## Deployment
 GitHub Pages: [Homepage](https://toomeme.github.io/react-portfolio/)
-
-
