@@ -39,8 +39,13 @@ function ContactForm() {
 
   return (
     <div className= "contact-container">
-    <section>
+    <section data-aos="fade-right">
       <h1 data-testid="h1tag" ref={myRef}>Contact me</h1>
+      <div id="contact-info" data-aos="fade-left">
+          <img src={require(`../../assets/small/portfolio/metoken.png`)} alt="Toomey"/>
+          <h6><a href="tel:203.525.1160">Phone: (203)-525-1160</a></h6>
+          <h6><a href="mailto://jtoom238@tgmail.com">Email: jtoom238@gmail.com</a></h6>
+        </div>
       <form id="contact-form" className= "contact-section" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

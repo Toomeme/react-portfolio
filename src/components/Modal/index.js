@@ -5,7 +5,7 @@ function Modal({ onClose, currentPhoto }) {
 
   return (
    <div className="modalBackdrop">
-      <div className="modalContainer">
+      <div className="modalContainer" data-aos="zoom-in-up">
         <h3 className="modalTitle">{name} </h3>
         <a href={url} target="_blank" rel="noopener noreferrer">
         <img

@@ -47,6 +47,7 @@ const PhotoList = ({ category }) => {
       <div className="flex-row-2">
         {currentPhotos.map((image, i) => (
           <img
+            data-aos="flip-down"
             src={require(`../../assets/small/${category}/${i}.png`)}
             alt={image.name}
             className="img-thumbnail mx-1"

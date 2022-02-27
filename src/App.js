@@ -5,10 +5,13 @@ import Deck from './components/Deck';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 
 function App() {
+
+  AOS.init();
 
   const [categories] = useState([
     {
