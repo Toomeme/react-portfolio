@@ -25,10 +25,10 @@ const PhotoList = ({ category }) => {
       url:"https://trackend-project.herokuapp.com/login",
     },
     {
-      name: 'Project 3',
+      name: 'DRAWFISH',
       category: 'portfolio',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      url:"https://toomeme.github.io/run-buddy/",
+      description: 'Drawfish is both a drawing app and community platform that provides a way to draw with your friends and share. Made using React, Amazon S3, MongoDB, graphQL, Socket.io, react-canvas, and Express.js.',
+      url:"https://https://drawfish.herokuapp.com/",
     }
   ]);
 
