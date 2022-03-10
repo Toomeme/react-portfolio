@@ -28,7 +28,7 @@ const PhotoList = ({ category }) => {
       name: 'DRAWFISH',
       category: 'portfolio',
       description: 'Drawfish is both a drawing app and community platform that provides a way to draw with your friends and share. Made using React, Amazon S3, MongoDB, graphQL, Socket.io, react-canvas, and Express.js.',
-      url:"https://https://drawfish.herokuapp.com/",
+      url:"https://drawfish.herokuapp.com/",
     }
   ]);
 
