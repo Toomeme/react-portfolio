@@ -10,7 +10,7 @@ const PhotoList = ({ category }) => {
       name: `Heaven's Pillar`,
       category: 'portfolio',
       description: `A fast-paced 2 player beat 'em up. Play the demo right in your browser! Made cross-platform with HTML5.`,
-      url:"https://toomeme.github.io/portfolio/game.html",
+      url:"https://agile-wave-91555.herokuapp.com/",
     },
     {
       name: 'mARTy',
