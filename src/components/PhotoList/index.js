@@ -9,7 +9,7 @@ const PhotoList = ({ category }) => {
     {
       name: `Heaven's Pillar`,
       category: 'portfolio',
-      description: `A fast-paced 2 player beat 'em up. Play the demo right in your browser! Made cross-platform with HTML5.`,
+      description: `A fast-paced 2 player Beat 'em Up. Play the demo right in your browser! Made cross-platform with HTML5.`,
       url:"https://agile-wave-91555.herokuapp.com/",
     },
     {
